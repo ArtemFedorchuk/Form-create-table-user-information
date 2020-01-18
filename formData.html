@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="formData.css">
+	<title>Document</title>
+</head>
+<body>
+		<div class="formWrapper">
+				<!-- <label for="sum">name</label> -->
+			<input
+				onchange="handleSubmit"
+				id="name" 
+				type="text" 
+				placeholder="NAME"
+				required
+			>
+			<br><br>
+			<!-- <label for="price">last name</label> -->
+			<input 
+				id="lastName" 
+				onchange="handleSubmit" 
+				type="text" 
+				placeholder="LAST NAME"
+				required 
+			>
+			<br><br>
+			<!-- <label for="price">email</label> -->
+			<input 
+				id="email" 
+				onchange="handleSubmit" 
+				type="text" 
+				placeholder="EMAIL"
+				required 
+			>
+			<br><br>
+			<button id="btn">send to table</button>
+		</div>
+
+		<div class="table-wrapper">
+			<table id="table">
+				<tr>
+					<th>NAME</th>
+					<th>LAST NAME</th>
+					<th>EMAIL</th>
+					<th>Date</th>
+					<th>del</th>
+				</tr>
+				<tr>
+					<td>Artem</td>
+					<td>Fedorchuk</td>
+					<td>fedorchuk.zver@gmail.com</td>
+					<td>12.05.2020</td>
+					<td>
+						<input type="checkbox" name="">
+					</td>
+				</tr>
+			</table>
+			<br><br>
+			<button class="button-del" id="btnDelete">delete</button>
+		</div>
+
+
+
+	<script src="formData.js"></script>
+</body>
+</html>

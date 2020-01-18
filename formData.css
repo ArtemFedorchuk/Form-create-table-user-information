@@ -1,0 +1,142 @@
+body{
+	border: box;
+	font-family: sans-serif;
+	padding: 0;
+	margin: 0;
+	background: #263238;
+}
+
+.formWrapper{
+	position: absolute;
+	top: 5%;
+	left: 50%;
+	transform: translate(-50%, -5%);
+	text-align: center;
+	background: #191919;
+	width: 350px;
+	padding: 40px 20px 20px 20px;
+	border: 2px solid #191919;
+	border-radius: 5px;
+}
+
+label{
+	display: block;
+	color: white;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+
+input{
+	width: 290px;
+	color: white;
+	border: 0;
+	display: block;
+	margin: 0px auto;
+	background: #191919;
+	border: 2px solid #3498db;
+	outline: none;
+	padding: 14px 10px;
+	border-radius: 24px;
+	transition: .25s ease;
+}
+
+input:focus{
+	width: 320px;
+	border-color: rgba(100,221,23 ,1);
+}
+
+input:required{
+	border-color: none;
+}
+
+.balance{
+/*	width: 100%;*/
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translate(-80%, -50%);
+	text-align: center;
+	height: 30px;
+	font-size: 20px;
+	color: white;
+}
+.balance span{
+/*	width: 100%;*/
+	text-align: center;
+	color: white;
+}
+
+button{
+	color: white;
+	border: 0;
+	display: block;
+	margin: 20px auto;
+	background: #191919;
+	border: 2px solid #3498db;
+	padding: 14px 40px;
+	outline: none;
+	padding: 14px 20px;
+	border-radius: 24px;
+	transition: .25s ease;
+	font-weight: 600;
+}
+
+button:hover{
+	border-color: rgba(57,73,171 ,1);
+}
+
+.table-wrapper{
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%, -90%);
+	text-align: center;
+}
+
+table {
+	box-sizing: border-box;
+	white-space: nowrap;
+	background: #191919; 
+	color: white;
+	border-collapse: collapse;
+}
+
+tr{
+	color: white;
+}
+
+th{
+	color: white;
+	border-bottom: 2px solid rgba(230,81,0 ,1);
+	border-top: 2px solid rgba(230,81,0 ,1);
+	padding: 10px 90px;
+}
+th:nth-child(1){
+	border-left: 2px solid rgba(230,81,0 ,1);
+}
+th:nth-child(5){
+	padding: 10px 5px;}
+td{
+	padding: 10px 5px;
+	border-bottom: 2px solid #3498;
+}
+
+.button-del{
+	color: white;
+	border: 0;
+	display: block;
+	margin: 0px auto;
+	background: #263238;
+	border: 2px solid rgba(255,23,68 ,1);
+	padding: 14px 40px;
+	outline: none;
+	padding: 14px 20px;
+	border-radius: 24px;
+	font-weight: 600;
+}
+
+.button-del:hover{
+	border-color: rgba(213,0,0 ,1);
+}
